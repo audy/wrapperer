@@ -1,4 +1,4 @@
-# wrapperer
+# WrapperR
 
 Wrapperer is a universal wrapper for command-line programs for R. Instead of
 creating individual R wrappers for command-line programs, you can use
@@ -10,7 +10,7 @@ Wrapperer.
 source('wrapperer.R')
 
 # define a wrapper for `ls`
-ls <- wrapperr('ls')
+ls <- wrapperer('ls')
 
 # returns a list of files in ~/Downloads
 ls('-lash ~/Downloads')
