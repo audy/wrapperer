@@ -13,13 +13,17 @@ source('wrapperer.R')
 ls <- wrapperer('ls')
 
 # returns a list of files in ~/Downloads
-ls('-lash ~/Downloads')
+ls('-l ~/Downloads')
+-rw-r--r--@  1 austin  staff  23659951 Jun  5 07:36 AIM_Install.dmg
+drwxr-xr-x   2 austin  staff        68 Aug 18 23:20 music
+drwxr-xr-x   5 austin  staff       170 Sep 13 23:32 cat-pictures
 
 # define a wrapper for `curl`
 curl <- wrapperer('curl')
 
 # get your current IP address
 curl('https://icanhazip.com')
+188.184.37.205
 ```
 
 ## License
