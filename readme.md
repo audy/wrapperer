@@ -24,6 +24,24 @@ curl <- wrapperer('curl')
 # get your current IP address
 curl('https://icanhazip.com')
 188.184.37.205
+
+# define a wrapper for `brew`
+brew <- wrapperer('brew')
+
+brew('install cowsay')
+
+cowsay <- wrapperer('cowsay')
+...
+
+cowsay('hello, world'!)
+ _______________
+< hello, world! >
+ ---------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
 
 ## License
