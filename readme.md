@@ -1,8 +1,8 @@
 # WrappereR
 
-WrappereR is a universal wrapper for command-line programs for R. Instead of
-creating individual R wrappers for command-line programs, you can use
-WrappereR.
+WrappereR is a universal wrapper for command line programs for R. Instead of
+creating individual R wrappers for command line programs, you can use
+WrappereR to wrap literally any command line executable.
 
 ## Examples
 
