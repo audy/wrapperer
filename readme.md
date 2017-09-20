@@ -10,7 +10,9 @@ WrappereR to wrap literally any command line executable.
 ### `ls`
 
 ```r
-wrapperer('ls -l ~/Downloads')
+ls <- wrapperer('ls')
+
+ls('-l ~/Downloads')
 
 -rw-r--r--@  1 austin  staff  23659951 Jun  5 07:36 AIM_Install.dmg
 drwxr-xr-x   2 austin  staff        68 Aug 18 23:20 music
@@ -20,8 +22,10 @@ drwxr-xr-x   5 austin  staff       170 Sep 13 23:32 cat-pictures
 ### `curl`
 
 ```r
+curl <- wrapperer('curl')
+
 # get your current IP address
-wrapperer('curl https://icanhazip.com')
+curl('https://icanhazip.com')
 188.184.37.205
 ```
 
@@ -29,8 +33,12 @@ wrapperer('curl https://icanhazip.com')
 
 ```r
 # make some cows
-wrapperer('brew install cowsay')
-wrapperer('cowsay "hello, world!"')
+brew <- wrapperer('brew')
+
+brew('install cowsay')
+
+cowsay <- wrapperer('cowsay')
+cowsay('"hello, world!"')
 ```
 
 Prints:
