@@ -10,9 +10,7 @@ WrappereR.
 ### `ls`
 
 ```r
-ls <- wrapperer('ls')
-
-ls('-l ~/Downloads')
+wrapperer('ls -l ~/Downloads')
 
 -rw-r--r--@  1 austin  staff  23659951 Jun  5 07:36 AIM_Install.dmg
 drwxr-xr-x   2 austin  staff        68 Aug 18 23:20 music
@@ -22,24 +20,17 @@ drwxr-xr-x   5 austin  staff       170 Sep 13 23:32 cat-pictures
 ### `curl`
 
 ```r
-# define a wrapper for `curl`
-curl <- wrapperer('curl')
-
 # get your current IP address
-curl('https://icanhazip.com')
+wrapperer('curl https://icanhazip.com')
 188.184.37.205
 ```
 
 ### `brew`
 
 ```r
-brew <- wrapperer('brew')
-
-brew('install cowsay')
-
-cowsay <- wrapperer('cowsay')
-
-cowsay('hello, world'!)
+# make some cows
+wrapperer('brew install cowsay')
+wrapperer('cowsay "hello, world!"')
 ```
 
 Prints:
